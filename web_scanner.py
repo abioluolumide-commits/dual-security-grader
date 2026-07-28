@@ -1,6 +1,7 @@
 from flask import Flask, render_template_string, request
 import requests
 import urllib3
+import os
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 app = Flask(__name__)
@@ -168,8 +169,6 @@ def home():
             result_html = f"<p style='color:red'>❌ Error: {e}</p>"
 
     return render_template_string(HTML, result=result_html)
-
- import os
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
