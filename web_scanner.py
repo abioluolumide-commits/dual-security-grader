@@ -130,7 +130,7 @@ HTML = '''
         <h1>🔒 Dual Security Grader</h1>
         <p style="text-align:center">Grades Standard Headers AND Proprietary Vendor Usage Separately</p>
         <form method="post">
-          <input name="url" placeholder="eportal2.oauife.edu.ng or google.com" required>
+          <input name="url" placeholder="google.com" required>
           <button>Run Audit</button>
         </form>
         <div class="result">{{result|safe}}</div>
