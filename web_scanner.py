@@ -163,7 +163,7 @@ def home():
             <b>Vendors detected:</b> {', '.join(prop['vendors_detected']) if prop['vendors_detected'] else 'None'}<br>
             <b>Deductions:</b> -{prop['deductions']} points for vendor lock-in
             <hr>
-            <p><i>Note: Proprietary score is higher when you use less 3rd party vendors</i></p>
+            <p><i>Details: Proprietary score is higher when you use less 3rd party vendors</i></p>
             """
         except Exception as e:
             result_html = f"<p style='color:red'>❌ Error: {e}</p>"
